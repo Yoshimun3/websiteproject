@@ -1,0 +1,359 @@
+@font-face {
+    font-family: myFont;
+    font-stretch: condensed;
+    src: url(eva.otf);
+    }
+    body {
+        background-image: url(Nerv\ Os\ Logon\ By\ Momo100100.jpg);
+        font-family: myFont;
+        font-stretch: condensed;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }     
+    .navbar {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+color: #ff0000;
+padding: 10px 20px;
+box-shadow: 0 2px 5px #ff0000;
+z-index: 9999;
+display: flex;
+justify-content: space-between; /* Distribute items with space between */
+align-items: center;
+}
+
+.navbar-icon {
+width: 50px;
+height: 30px;
+transition: transform 0.3s ease;
+}
+
+.navbar a {
+color: white;
+text-decoration: none;
+font-size: 16px;
+transition: font-weight 0.3s ease, transform 0.3s ease;
+}
+
+    .navbar a:last-child {
+        margin-right: 430px; /* Remove margin-right for the last button */
+    }
+    .navbar a:hover {
+        color: #ff0000;
+        transform: scale(1.2);
+    }
+    
+    .navbar-icon:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+.navbar-icon:hover::after {
+content: url(redicon.png); /* Add red icon image */
+display: block; /* Display the new image */
+width: 50px;
+height: 30px;
+position: absolute; /* Position the new image */
+filter: brightness(0) invert(1); /* Make the red icon */
+}
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Minimum height of the viewport */
+        padding-top: 60px; /* Adjusted to accommodate the navbar height */
+    }
+    h1 {
+        font-weight: bold;
+        color: white;
+        font-size: 45px;
+        margin-bottom: 60px;
+        opacity: 1; /* Initially hidden */
+        transition: opacity 0.5s ease-in-out; /* Fade-in transition */
+    }
+    section {
+        width: 100%; /* Full width of the viewport */
+        /* background-color: black; */
+        text-align: center;
+        padding: 50px 0;
+        box-sizing: border-box; /* Include padding in width calculation */
+        flex-grow: 1; /* Grow to fill remaining space */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Minimum height of the viewport */
+    }
+    h2 {
+        color: white;
+        font-size: 45px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    p {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 50px;
+        font-weight: bold;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .profile-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeInImage 1s ease-in-out forwards;
+    box-shadow: 4px 4px 10px 2px #ff0000;
+    transition: transform 0.5s ease; /* Add transition for size change */
+    margin-top: 60px;
+    }
+
+    .profile-image:hover {
+        transform: scale(1.1); /* Increase size on hover */
+    }
+
+@keyframes fadeInImage {
+from {
+    opacity: 0; /* Start from opacity 0 */
+}
+to {
+    opacity: 1; /* End at opacity 1 */
+}
+}
+.skill-bar {
+        margin-top: 50px;
+        margin-bottom: auto;
+    }
+    .skill-name {
+        margin-bottom: 50px;
+        font-weight: bold;
+        
+    }
+    .skill-level {
+        
+        border-radius: 10px;
+        width: 1000px;
+        height: 20px;
+        background-color: rgba(255, 255, 255, 0.295);
+        margin: 0;
+        padding: 0;
+        display: flex; /* Use flexbox */
+        align-items: center; /* Center vertically */
+        overflow: hidden; /* Hide overflowing part of the bar */
+        position: relative; 
+    }
+    .skill-level .level {
+        
+        height: 100%;
+        position: absolute; /* Position the level absolutely within the bar */
+        left: 0; /* Start from the left side */
+        width: 0; /
+    }
+    /* Adjust the colors and widths according to your preference */
+    .beginner .level {
+        
+        background-color: white; /* Red */
+        width: 30%;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    .beginner :hover {
+        background-color: red;
+    }
+    .intermediate .level {
+        background-color: white; /* Orange */
+        width: 70%;
+        border-radius: 10px;
+    }
+    .intermediate :hover{
+        background-color: red;
+        width: 70%;
+    }
+    .advanced .level {
+        background-color: white; /* Green */
+        width: 40%;
+        border-radius: 10px;
+    }
+    .advanced :hover{
+        background-color: #ff0000;
+    }
+    .html .level{
+        background-color: white; /* Green */
+        width: 90%;
+        border-radius: 10px;
+    }
+    .html :hover{
+        background-color: #ff0000;
+    }
+    .button {
+    background-color: black;;
+    color: #ff0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px; /* Adjust the border-radius to round the corners */
+    transition: transform 0.3s ease ;
+    box-shadow: 4px 4px 10px 2px #ff0000;
+    }
+    .button:hover {
+        transform: scale(1.2);
+    }
+    .about-content {
+display: flex;
+flex-direction: row; /* Align content horizontally */
+justify-content: space-between; /* Space evenly between items */
+align-items: center; /* Align items vertically */
+}
+
+.about-text {
+flex: 1; /* Allow text to take available space */
+}
+
+.about-image img {
+    margin-right: 15px;
+width: 300px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+    border-radius: 10px; /* Add rounded corners to the image */
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: fadeInImage 1s ease-in-out forwards; 
+    box-shadow: 4px 4px 10px 2px #ff0000; ;
+    transition: transform 0.3s ease;
+
+}
+.about-image img:hover {
+transform: scale(1.1); /* Increase scale on hover */
+}
+/* Slightly transparent scrollbar */
+::-webkit-scrollbar {
+width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+background-color:  #ff0000; /* Adjust alpha for transparency */
+border-radius: 100px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-track { 
+background-color: black; /* Adjust alpha for transparency */
+}
+section h2 {
+background-color: black; /* Background color */
+color: #ff0000; /* Text color */
+padding-right: 500px ; /* Padding for spacing */
+padding-left: 500px ;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 100px; /* Rounded corners */
+margin-bottom: 90px;
+box-shadow: 4px 4px 10px 2px #ff0000;
+
+}
+.container h2 {
+background-color: black; /* Background color */
+color: #ff0000; ; /* Text color */
+padding-right: 500px ; /* Padding for spacing */
+padding-left: 500px ;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 100px; /* Rounded corners */
+box-shadow: 4px 4px 10px 2px #ff0000;
+}
+.flip-container {
+perspective: 1000px; /* Add perspective for 3D effect */
+width: 700px; /* Adjust the width of the container */
+height: 400px; /* Adjust the height of the container */
+border-radius: 10px; /* Add rounded corners to the container */
+margin-bottom: 90px;
+}
+
+.flipper {
+position: relative;
+width: 100%;
+height: 100%;
+transition: transform 0.6s; /* Apply transition effect */
+transform-style: preserve-3d;
+
+}
+
+.flip-container:hover .flipper {
+transform: rotateY(180deg); /* Flip the flipper on hover */
+}
+
+.front,
+.back {
+position: absolute;
+width: 100%; /* Set fixed width */
+height: 100%; /* Set fixed height */
+border-radius: 10px; /* Add rounded corners to the sides */
+backface-visibility: hidden; /* Hide the back of the card */
+display: flex; /* Use flexbox for centering */
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.front img {
+width: 100%; /* Make the image fill the front side */
+height: 100%; /* Make the image fill the front side */
+object-fit: cover; /* Ensure the image covers the entire area */
+border-radius: 10px;
+box-shadow: 4px 4px 10px 2px #ff0000;
+}
+
+.back {
+transform: rotateY(180deg); /* Rotate the back side */
+background-color: black ; /* Add background color for the back side */
+color: #ff0000; /* Set text color for the back side */
+padding: 20px; /* Add padding for the back side */
+box-sizing: border-box; /* Include padding in width calculation */
+box-shadow: 4px 4px 10px 2px #ff0000;
+}
+.back h3 {
+margin-top: 0; /* Remove default margin */
+margin-bottom: 20px; /* Add margin below the title */
+}
+.skills-title, .skill-name {
+background-color: black; /* Brown background color */
+color: #ff0000; /* Text color */
+padding: 5px 10px; /* Adjust padding as needed */
+border-radius: 50px; /* Add rounded corners */
+display: inline-block; /* Ensure inline display */
+margin-bottom: 50px; /* Add margin bottom for spacing */
+box-shadow: 4px 4px 10px 2px #ff0000;
+}
+#skills p {
+background-color: black; /* Brown background color */
+color: #ff0000; /* Text color */
+padding: 10px; /* Adjust padding as needed */
+border-radius: 50px; /* Add rounded corners */
+margin-bottom: 50px; /* Add margin bottom for spacing */
+box-shadow: 4px 4px 10px 2px #ff0000;
+}
+#resume p {
+margin-top: 250px;
+
+margin-top: auto;
+}
+#portfolio h2 {
+margin-top: 200px;
+}
+#resume h2 {
+margin-top: 300px;
+
+}
+#about p {
+margin-right: 90px;  
+}
+h1#home {
+font-size: 80px; /* Adjust the font size as needed */
+}

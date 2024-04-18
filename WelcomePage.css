@@ -1,0 +1,123 @@
+@font-face {
+    font-family: myFont;
+    src: url(eva.otf);
+    }
+    body {
+        font-family: myFont;
+        font-stretch: condensed;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-image: url(Nerv\ Os\ Logon\ By\ Momo100100.jpg);
+        color: #fff; /* Set text color to white */
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; 
+        opacity: 0; 
+        animation: fadeUpText 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0; 
+        }
+        to {
+            opacity: 1; 
+        }
+    }
+
+    .profile-image {
+        width: 200px; /* Adjust the width of the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add margin bottom for spacing */
+        border-radius: 10px; /* Add rounded corners to the image */
+        opacity: 0; /* Initially set opacity to 0 */
+        animation: fadeInImage 1s ease-in-out forwards; /* Apply fade-in animation */
+    }
+
+    @keyframes fadeInImage {
+        from {
+            opacity: 0; /* Start from opacity 0 */
+        }
+        to {
+            opacity: 1; /* End at opacity 1 */
+        }
+    }
+
+    .connect-text {
+        opacity: 0; /* Initially set opacity to 0 */
+        animation: fadeUpText 1s ease-in-out forwards; /* Apply fade-up animation */
+    }
+
+    @keyframes fadeUpText {
+        from {
+            opacity: 0; /* Start from opacity 0 */
+            transform: translateY(20px); /* Move the text down */
+        }
+        to {
+            opacity: 1; /* End at opacity 1 */
+            transform: translateY(0); /* Move the text up to its original position */
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px; /* Add margin bottom for spacing */
+    }
+    .social-icon {
+        margin: 0 10px; /* Adjust margin for spacing between icons */
+        animation: fadeUpText 1s ease-in-out forwards;
+    }
+    .social-icons a {
+        margin-right: 20px; /* Adjust the value as per your spacing preference */
+        animation: fadeUpText 1s ease-in-out forwards;
+    }
+    .social-icons a i {
+        color: white; /* Set the color to red */
+    }
+    .social-icons a:hover i {
+         transform: scale(1.2); /* Increase icon size on hover */
+    }
+    p{
+        font-weight: bold;
+    }
+    h1 {
+        font-family: myFont;
+        font-stretch: condensed;
+        color: white; /* Set the color to red */
+        font-size: 60px;
+        margin-bottom: 15px;
+        animation: fadeUpText 1s ease-in-out forwards;
+    }
+    h2 {
+        color: white; /* Set the color to red */
+        font-family: myFont;
+        font-stretch: condensed;
+        font-size: 24px;
+        margin-bottom: 30px; /* Adjusted margin bottom for spacing */
+        animation: fadeUpText 1s ease-in-out forwards;
+    }
+    .button {
+        box-shadow: 4px 4px 10px 2px #ff0000; /* Set box-shadow color to red */
+        background-color: black; /* Set background color to red */
+        color: #ff0000; /* Set text color to white */
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 10px; /* Adjust the border-radius to round the corners */
+        transition: transform 0.3s ease;
+        font-weight: no;
+    }
+
+    .button:hover {
+        transform: scale(1.2);
+    }
+    .profile-image
+    {
+        box-shadow: 4px 4px 10px 2px #ff0000; /* Set box-shadow color to red */
+    }
