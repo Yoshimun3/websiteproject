@@ -20,6 +20,20 @@
         opacity: 0; 
         animation: fadeUpText 1s ease-in-out forwards;
     }
+     @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px; /* Adjusted padding for smaller screens */
+            }
+            .profile-image {
+                width: 150px; /* Adjust the width of the image for smaller screens */
+            }
+            h1 {
+                font-size: 40px; /* Adjusted font size for smaller screens */
+            }
+            h2 {
+                font-size: 18px; /* Adjusted font size for smaller screens */
+            }
+        }
 
     @keyframes fadeIn {
         from {
