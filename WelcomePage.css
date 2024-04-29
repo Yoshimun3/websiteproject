@@ -74,16 +74,18 @@
     .social-icon {
         margin: 0 10px; /* Adjust margin for spacing between icons */
         animation: fadeUpText 1s ease-in-out forwards;
-        transition: transform 0.3s ease;
+        
     }
     .social-icons a {
         margin-right: 20px; /* Adjust the value as per your spacing preference */
         animation: fadeUpText 1s ease-in-out forwards;
-        transition: transform 0.3s ease;
+        
+        
     }
     .social-icons a i {
         color: white; /* Set the color to red */
         transition: transform 0.3s ease;
+        
     }
     .social-icons a:hover i {
          transform: scale(1.2); /* Increase icon size on hover */
