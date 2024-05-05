@@ -364,7 +364,7 @@ font-size: 80px; /* Adjust the font size as needed */
 
     .navbar {
         flex-wrap: wrap; /* Allow navbar items to wrap */
-        justify-content: left; /* Center navbar items */
+        align-items: left; /* Center navbar items */
         padding: 10px; /* Adjust padding for the navbar */
         width: 100%; /* Set navbar width to 100% */
     }
@@ -440,6 +440,7 @@ font-size: 80px; /* Adjust the font size as needed */
     h1#home {
         font-size: 40px; /* Adjust font size for homepage heading */
         align-items: center;
+        text-align: center;
     }
     
     h2#resume{
