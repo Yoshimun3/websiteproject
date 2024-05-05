@@ -364,7 +364,7 @@ font-size: 80px; /* Adjust the font size as needed */
 
     .navbar {
         flex-wrap: wrap; /* Allow navbar items to wrap */
-        align-items: left; /* Center navbar items */
+        align-items: left;
         padding: 10px; /* Adjust padding for the navbar */
         width: 100%; /* Set navbar width to 100% */
     }
@@ -375,6 +375,7 @@ font-size: 80px; /* Adjust the font size as needed */
 
     .container {
         padding-top: 50px; /* Adjust padding for the container */
+        width: 400px;
     }
 
     h1 {
@@ -435,7 +436,10 @@ font-size: 80px; /* Adjust the font size as needed */
     
     #about p {
         margin-right: 20px; /* Adjust margin for about paragraphs */
+        text-align: center;
+        
     }
+   
 
     h1#home {
         font-size: 40px; /* Adjust font size for homepage heading */
@@ -451,6 +455,6 @@ font-size: 80px; /* Adjust the font size as needed */
         width: 390px /* Adjust width of skill bar */
          /* Center skill bar */
     }
-    
+   
   
 }
