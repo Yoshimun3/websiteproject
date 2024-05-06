@@ -88,6 +88,7 @@ filter: brightness(0) invert(1); /* Make the red icon */
         justify-content: center;
         align-items: center;
         min-height: 100vh; /* Minimum height of the viewport */
+        overflow: hidden;
     }
     h2 {
         color: white;
