@@ -77,8 +77,8 @@ filter: brightness(0) invert(1); /* Make the red icon */
         transition: opacity 0.5s ease-in-out; /* Fade-in transition */
     }
     section {
-           width:100%; /* Full width of the viewport */
-        /* background-color: black; */
+        width:100%;
+        
         text-align: center;
         padding: 50px 0;
         box-sizing: border-box; /* Include padding in width calculation */
@@ -272,6 +272,7 @@ width: 700px; /* Adjust the width of the container */
 height: 400px; /* Adjust the height of the container */
 border-radius: 10px; /* Add rounded corners to the container */
 margin-bottom: 90px;
+z-index: 9999;
 }
 
 .flipper {
