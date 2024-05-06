@@ -360,6 +360,7 @@ font-size: 80px; /* Adjust the font size as needed */
 @media only screen and (max-width: 600px) {
     body {
         font-size: 14px; /* Adjust font size for better readability */
+        overflow-x: hidden;
     }
 
     .navbar {
