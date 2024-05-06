@@ -10,7 +10,7 @@
         margin: 0;
         padding: 0;
         background-color: black;
-        overflow-x: hidden;
+       
     }     
     .navbar {
 position: fixed;
@@ -361,7 +361,7 @@ font-size: 80px; /* Adjust the font size as needed */
 @media only screen and (max-width: 600px) {
     body {
         font-size: 14px; /* Adjust font size for better readability */
-        overflow-x: hidden;
+       
     }
 
     .navbar {
@@ -372,7 +372,7 @@ font-size: 80px; /* Adjust the font size as needed */
     }
 
     .navbar a {
-        margin-right: 10px; /* Adjust margin for navbar links */
+        margin-right: auto; /* Adjust margin for navbar links */
     }
 
     .container {
