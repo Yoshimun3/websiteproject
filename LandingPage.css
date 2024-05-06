@@ -365,10 +365,6 @@ font-size: 80px; /* Adjust the font size as needed */
         font-size: 14px; /* Adjust font size for better readability */
        
     }
-    section {
-        height: 1000px;
-        overflow: hidden;
-    }
 
     .navbar {
         flex-wrap: wrap; /* Allow navbar items to wrap */
